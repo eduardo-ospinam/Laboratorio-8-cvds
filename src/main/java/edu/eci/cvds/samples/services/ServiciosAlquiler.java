@@ -78,6 +78,9 @@ public interface ServiciosAlquiler {
    public abstract void actualizarTarifaItem(int id, long tarifa) throws ExcepcionServiciosAlquiler;
 
    public abstract void registrarItem(Item i) throws ExcepcionServiciosAlquiler;
+   
+   public abstract void registrarTipoItem(TipoItem i) throws ExcepcionServiciosAlquiler;
+   //public abstract void registrarItem(Item i) throws ExcepcionServiciosAlquiler;
 
    public abstract void vetarCliente(long docu, boolean estado) throws ExcepcionServiciosAlquiler;
 

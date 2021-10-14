@@ -43,7 +43,7 @@ public class ServiciosAlquilerImpl implements ServiciosAlquiler {
    @Override
    public Item consultarItem(int id) throws ExcepcionServiciosAlquiler {
        try {
-           return itemDAO.load(id);
+           return itemDAO.consultarItem(id);
        } catch (PersistenceException ex) {
            throw new ExcepcionServiciosAlquiler("Error al consultar el item "+id,ex);
        }
@@ -97,4 +97,9 @@ public class ServiciosAlquilerImpl implements ServiciosAlquiler {
    public void vetarCliente(long docu, boolean estado) throws ExcepcionServiciosAlquiler {
        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
    }
+
+	@Override
+	public void registrarTipoItem(TipoItem i) throws ExcepcionServiciosAlquiler {
+		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+	}
 }

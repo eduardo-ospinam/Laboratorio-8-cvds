@@ -8,4 +8,26 @@
         <id property='id' column='id'/>
         <result property='descripcion' column='descripcion'/>
     </resultMap>
+
+    <select parameterType="map" id="getTiposItems" resultMap="TipoItemResult">
+        select
+          ti.id,
+          ti.descripcion
+        FROM VI_TIPOITEM as ti;
+
+    </select>
+
+    <select parameterType="map" id="getTipoItem" resultMap="TipoItemResult">
+        select
+          ti.id,
+          ti.descripcion
+        FROM VI_TIPOITEM as ti
+        WHERE ti.id = #{idt};
+
+    </select>
+
+    <insert id="addTipoItem" parameterType="map" >
+        insert into VI_TIPOITEM(id,descripcion) values (#{it.id},#{it.descripcion});
+    </insert>
+
 </mapper>

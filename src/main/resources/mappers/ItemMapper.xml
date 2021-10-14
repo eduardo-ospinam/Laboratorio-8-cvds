@@ -52,5 +52,14 @@
         <association property='tipo' javaType = 'TipoItem' resultMap='edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper.TipoItemResult' columnPrefix='tipoitem_'></association>
     </resultMap>
     
+    <select parameterType="map" id="consultarItemsDisponibles" resultMap="ItemResult">
+        SELECT *
+        FROM VI_ITEMS as i
+        WHERE i.id not in (SELECT ir.id from VI_ITEMRENTADO as ir);
+    </select>
+
+    <update parameterType="map" id="actualizarTarifaItem">
+        update VI_ITEMS set tarifaxdia=#{tarifa} where id=#{id};
+    </update>
     
 </mapper>

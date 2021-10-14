@@ -6,10 +6,8 @@ import edu.eci.cvds.samples.entities.*;
 
 public interface ItemRentadoMapper {
 	
-	public List<TipoItem> getItemsRentados();
+	public List<TipoItem> consultarItemRentados();
 	
-	public TipoItem getItemRentado(int id);
-	
-	public void adddItemRentado(int clid, int itemid, Date fechaini, Date fechafin);
+	public TipoItem consultarItemRentado(int id);
 	
 }
