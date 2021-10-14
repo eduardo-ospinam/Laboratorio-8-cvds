@@ -1,8 +1,19 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
 
-    <head>
-        <title> registrar alquiler </title>
+<h:head>
+    <title> Información del Cliente </title>
+    <link rel="stylesheet" type="text/css" href="styleClient.css" />
+</h:head>
 
-    </head>
-
+<h:body>
+    <h:form id="FormaAlquiler">
+        <p:dataTable var="alquiler" value="#{AlquilerItem.getCliente().rentados}"/>
+            <f:facet name="header">
+                <h:outputText value="Informe de alquiler" />
+            </f:facet>
+    </h:form>
+</h:body>
 </html>
