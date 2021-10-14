@@ -19,4 +19,4 @@
 ![](https://i.postimg.cc/nrqS6TVg/lab8-11.jpg)
 ![](64b7c8e0-6def-4573-b805-7d34fef03a12.jpg)
 ![](e37bb471-d875-4b6c-969c-9d58d228aba613.jpg)
-![](7be539a7-a3cd-4c9f-8e31-2ad42a3916f514.jpg)
+![](https://i.postimg.cc/PxksRLT6/7be539a7-a3cd-4c9f-8e31-2ad42a3916f514.jpg)
